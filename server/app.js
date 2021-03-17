@@ -3,6 +3,8 @@ const express = require('express');
 const app = express();
 dotenv.config({ path: './config.env' });
 require('./db/conn');
+// const Use = require('./model/userSchema');
+app.use(require('./router/auth'));
 
 const PORT = process.env.PORT;
 
