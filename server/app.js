@@ -3,6 +3,8 @@ const express = require('express');
 const app = express();
 dotenv.config({ path: './config.env' });
 require('./db/conn');
+
+app.use(express.json());
 // const Use = require('./model/userSchema');
 app.use(require('./router/auth'));
 
@@ -16,7 +18,7 @@ const middleware = (req, res, next) => {
 }
 
 app.get('/', (req, res) => {
-    res.send("hello world");
+    res.send("hello home from app.js");
 });
 
 app.get('/about', middleware, (req, res) => {
