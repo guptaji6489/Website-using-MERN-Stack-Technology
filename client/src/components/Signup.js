@@ -50,7 +50,7 @@ const Signup = () => {
 			<input placeholder="Full Name" name="name" type="text" value={user.name} onChange={myinput} required />
 			<input placeholder="Email" name="email" type="email"   value={user.email}  onChange={myinput} required=""/>
 			<input placeholder="Phone Number" name="phone" type="text"  value={user.phone} onChange={myinput} required="" />
-            <input placeholder="Your work" name="work" type="text"   value={user.work} onChange={myinput} required="" />
+            <input placeholder="Your Occupation" name="work" type="text"   value={user.work} onChange={myinput} required="" />
 			<input placeholder="Password" name="password" type="password"  id="password1"  value={user.password} onChange={myinput}  required="" />
 			<input placeholder="Confirm Password" name="cpassword" type="password"  id="password2"  value={user.cpassword} onChange={myinput}  required="" />
 			<input type="submit" value="Register" name="login" onClick={postData}/>
