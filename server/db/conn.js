@@ -10,4 +10,4 @@ mongoose.connect(DB, {
     useFindAndModify: false
 }).then(() => {
     console.log(`CONNECTION SUCCESSFUL`);
-}).catch(() => console.log(`not setup`));
+}).catch(() => console.log(`CONNECTION not  setup`));
